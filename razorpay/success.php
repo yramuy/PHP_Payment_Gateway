@@ -14,6 +14,7 @@ if (!empty($_POST)) {
 
     if ($genarated_signature == $razorpay_signature) {
         echo "Payment is successful";
+        print_r($_POST);
     } else {
         echo "Payment is failed";
     }
